@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congreso Iberoamericano Unisucre - 2024 </title>
+  <link href="./css/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+
+<body class=" font-inter bg-gradient-to-br from- to-">
+  <nav class="bg-white border-b-[1px]  border-primary-black  ">
+    <div class=" flex flex-col gap-y-4 md:max-w-screen-xl md:flex-row flex-wrap  items-center justify-between mx-auto p-4 ">
+      <svg class="fill-black" id="logo-86" width="40" height="40" viewBox="0 0 40 40" 
+        xmlns="http://www.w3.org/2000/svg">
+        <path class="ccustom" fill-rule="evenodd" clip-rule="evenodd"
+          d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z"
+          fill="#86FFA0"></path>
+        <path class="ccustom" fill-rule="evenodd" clip-rule="evenodd"
+          d="M10 5.16562e-07C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99966 6.14248 7.07107 7.07107C6.14249 7.99966 5.0401 8.73625 3.82684 9.2388C2.61358 9.74134 1.31322 10 5.4439e-06 10L5.00679e-06 20C2.62644 20 5.22716 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 -3.81469e-06L10 5.16562e-07Z"
+          fill="#86FFA0"></path>
+      </svg>
+      <div class="flex flex-col md:flex-row items-center gap-y-2 md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <div class=" flex flex-row gap-x-2 bg-primary-color rounded-lg px-2.5 py-1 ">
+          <img  class="w-8 h-8" src="icons/email.svg" alt="">
+          <button type="button"
+          class="focus:outline-none text-base font-semibold ">Reservar ahora</button>
+        
+      </div>
+
+        <!-- Dropdown -->
+        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow "
+          id="language-dropdown-menu">
+
+
+        </div>
+        <button id="theme-toggletwo" type="button"
+          class="  inline-flex items-center w-10 h-10 justify-center text-sm  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600"
+          aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul
+          class="flex flex-col font-semibold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-none ">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent">Inicio</a>
+          </li>
+          <li>
+            <a href="#proyectos"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent">Acerca</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent ">Programa</a>
+          </li>
+          <li>
+            <a href="#contacto"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent ">Politicas</a>
+          </li>
+          <li>
+            <a href="#playground"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent    ">Localización</a>
+          </li>
+          <li>
+            <a href="#playground"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent    ">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="relative " >
+      <div class="container grid grid-rows-1 grid-cols-1  max-w-screen-lg gap-x-5 flex-wrap  items-center justify-center md:my-[185px] mx-auto p-4 md:flex flex-col my-[100px] ">
+          <div>
+              <div class="flex flex-col  text-primary-black ">
+                  <div class="flex flex-col  justify-center items-center md:flex-row md:gap-x-6">
+                    <h1 class=" mt-2 md:mt-0  text-4xl md:text-[54px] font-extrabold ">XIV</h1>
+                    <h1 class="mt-2 md:mt-0 text-4xl md:text-[54px] font-extrabold ">CONGRESO</h1>
+                  </div>
+                  <div class="flex flex-col justify-center items-center md:flex-row md:gap-x-3">
+                      <h2 class= "text-[30px] md:text-[54px] font-extrabold  dark:text-white">LATINOAMERICANO </h2>
+                      <h2 class= "text-4xl md:text-[54px] font-extrabold  dark:text-white">Y DEL CARIBE</h2>
+
+                  </div>
+                  <div class="flex flex-col justify-center items-center md:flex-row md:gap-x-3">
+                    <h2 class= "text-4xl md:text-[54px]  font-extrabold   dark:text-white">DE INGENIERIA</h2>
+                    <h2 class= " text-4xl md:text-[54px]  font-extrabold   dark:text-white"> AGRICOLA </h2>
+                   
+                </div>
+                <div class="flex justify-end  pr-0 md:pr-24">
+                  <img  class="w-[260px] h-[20px]" src="/src/icons/line-shape.svg" alt="">
+                    
+                </div>
+                
+              </div>
+              <div class="mt-6 flex  justify-around	">
+                <p class=" items-center font-normal text-lg text-primary-black dark:text-white"> <span class="text-green-font dark:text-white">Lorem ipsum dolor </span>
+                  sit amet consectetur. Tempus vestibulum convallis <br>
+                  tellus massa varius orci amet risus. Dignissim enim neque duis amet <br>
+                  orci. Est elementum semper elit integer nunc egestas.</p>
+
+                <div class=" hidden md:block  text-primary-blue " >
+                  <img  class="w-8 h-8" src="/src/icons/happy.svg" alt="">
+                  <div class="flex gap-x-2 items-center">
+                    <h1 class="font-extrabold text-2xl">2K +</h1>
+                    <h1>Ponentes</h1>
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <h1 class="font-extrabold text-2xl">25K +</h1>
+                    <h1>Reservaciones</h1>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+              <div class=" mt-8 bg-primary-black text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
+                
+                <h1>REGISTRARSE</h1>
+                <img class="w-8 h-8" src="/src/icons/flecha.svg" alt="">
+              </div>
+            </div>
+
+          <div class=" flex gap-x-10 mt-20 justify-center flex-wrap gap-y-8">
+            <img src="/src/icons/logoipsum-236.svg" alt="">
+
+            <img src="/src/icons/logoipsum-262.svg" alt="">
+            <img src="/src/icons/logoipsum-235.svg" alt="">
+            <img src="/src/icons/logoipsum-238.svg" alt="">
+
+
+          </div>
+          </div>
+      </div>
+
+  </section>
+  <section class="relative " id="proyectos">
+    <div class="container flex flex-col md:grid  grid-rows-1 grid-cols-2  max-w-screen-lg content-center  flex-wrap justify-center mx-auto ">
+    <div class="mx-4 mt-8 md:mt-32 ">
+        <div class="flex flex-col items-center">
+            <p class="text-lg  md:text-3xl  font-extrabold  text-black-medium dark:text-white">
+            Ejes Tematicos
+            </p>
+            <img  class="w-[260px] h-[20px]" src="/src/icons/line-shape.svg" alt="">
+
+        </div>
+        
+        <div class="p-10 ">  
+            <!--Card 1-->
+            <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-600 to-pink-600 dark:from-blue-800 dark:to-purple-800 ">
+            <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+              <img class="w-full" src="/src/img/maquina.jpg" alt="maquinaria">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 dark:text-white">Maquinaria y Mecanización</div>
+                <p class="text-base text-black-medium dark:text-white">
+                  Esta disciplina abarca el diseño, la fabricación, el mantenimiento y la operación de maquinaria, así como la automatización de procesos para aumentar la productividad, mejorar la precisión y reducir el esfuerzo humano        </p>
+              </div>
+              
+              
+            </div>
+        </div>
+          </div>
+        
+            
+          <div class="p-10 ">  
+            <!--Card 1-->
+            <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-600 to-pink-600 dark:from-blue-800 dark:to-purple-800 ">
+            <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+              <img class="w-full" src="/src/img/riego.jpg" alt="maquinaria">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 dark:text-white">Ingeniería de Riego y Drenaje</div>
+                <p class="text-base text-black-medium dark:text-white">
+                  Esta disciplina busca desarrollar soluciones sostenibles y eficientes para garantizar un suministro adecuado de agua a los cultivos, así como para controlar el exceso de agua en terrenos agrícolas y urbanos                      </p>
+              </div>
+              
+              
+            </div>
+        </div>
+          </div>
+        </div>    
+        <div class="mx-4 mt-1">
+          <div class="p-10 ">  
+            <!--Card 1-->
+            <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-600 to-pink-600 dark:from-blue-800 dark:to-purple-800 ">
+            <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+              <img class="w-full" src="/src/img/alimentos.jpg" alt="maquinaria">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 dark:text-white">Ingeniería de alimentos</div>
+                <p class="text-base text-black-medium dark:text-white">
+                  Los ingenieros en alimentos trabajan en el diseño y la operación de plantas de procesamiento de alimentos, desarrollando tecnologías y métodos para mejorar la calidad, la seguridad y la vida útil de los productos alimenticios.                </p>
+              </div>
+              
+              
+            </div>
+        </div>
+          </div>
+          <div class="p-10 ">  
+            <!--Card 1-->
+            <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-600 to-pink-600 dark:from-blue-800 dark:to-purple-800 ">
+            <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+              <img class="w-full" src="/src/img/biologia.jpg" alt="maquinaria">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 dark:text-white">Ingeniería en Sistemas Biológicos</div>
+                <p class="text-base text-black-medium dark:text-white">
+                  es una disciplina interdisciplinaria que aplica principios de ingeniería, ciencias biológicas y computacionales para diseñar, modelar, analizar y controlar sistemas biológicos complejos                </p>
+              </div>
+              
+              
+            </div>
+        </div>
+          </div>
+        </div>
+        
+    </div>
+
+
+</section>
+  <section class="relative " id="proyectos">
+    <div class="container flex flex-col md:grid  grid-rows-1 grid-cols-1  max-w-screen-lg content-center  flex-wrap justify-center mx-auto ">
+      <div class="mx-4 mt-8 md:mt-32 ">
+        <div class="flex flex-col items-center">
+          <p class="text-2xl  md:text-3xl  font-extrabold  text-black-medium dark:text-white">
+          Fechas Importantes
+          </p>
+          <img  class="w-[260px] h-[20px]" src="/src/icons/line-shape.svg" alt="">
+
+      </div>
+          
+          <div class="p-10 flex flex-row gap-x-4 justify-center gap-y-3 flex-wrap">  
+              <!--Card 1-->
+              
+              <div class="max-w-sm  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                <div class="px-6 py-4 bg-green-primary ">
+                  <ul>
+                
+                    <li class="flex justify-center">
+                      <h1 class="text-[100px] font-extrabold text-white  dark:text-white">30</h1>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class="text-3xl mb-4 font-extrabold text-white dark:text-white"> Junio - 2024</p>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class=" text-base font-semibold text-primary-yellow dark:text-white"> Cierre de recepcion de resumenes</p>
+                    </li>
+                  </ul>
+                
+                </div>
+                
+                <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
+                  <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span >Learn More </span>
+                  <img class="w-6 h-6 rounded-full  " src="/src/icons/arrow-black.svg" alt="">
+
+                  </a>
+                </div>
+              </div>
+               <!--Card 2-->
+               <div class="max-w-sm  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                <div class="px-6 py-4 bg-green-primary ">
+                  <ul>
+                
+                    <li class="flex justify-center">
+                      <h1 class="text-[100px] font-extrabold text-white  dark:text-white">15</h1>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class="text-3xl mb-4 font-extrabold text-white dark:text-white"> Agosto - 2024</p>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class=" text-base font-semibold text-primary-yellow dark:text-white">Modo de presentacion y aceptacion de trabajos</p>
+                    </li>
+                  </ul>
+                
+                </div>
+                
+                <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
+                  <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span >Learn More </span>
+                  <img class="w-6 h-6 rounded-full  " src="/src/icons/arrow-black.svg" alt="">
+
+                  </a>
+                </div>
+              </div>
+               <!--Card 3-->
+              <div class="max-w-sm  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                <div class="px-6 py-4 bg-green-primary ">
+                  <ul>
+                
+                    <li class="flex justify-center">
+                      <h1 class="text-[100px] font-extrabold text-white  dark:text-white">30</h1>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class="text-3xl mb-4 font-extrabold text-white dark:text-white"> Sept - 2024</p>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class=" text-base font-semibold text-primary-yellow dark:text-white"> Recepcion de documentos finales</p>
+                    </li>
+                  </ul>
+                
+                </div>
+                
+                <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
+                  <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span >Learn More </span>
+                  <img class="w-6 h-6 rounded-full  " src="/src/icons/arrow-black.svg" alt="">
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="p-10 flex flex-row gap-x-8 gap-y-3 justify-center flex-wrap">  
+              <!--Card 1-->
+              <div class="max-w-sm  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                <div class="px-6 py-4 bg-green-primary ">
+                  <ul>
+                
+                    <li class="flex justify-center">
+                      <h1 class="text-[100px] font-extrabold text-white  dark:text-white">19</h1>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class="text-3xl mb-4 font-extrabold text-white dark:text-white"> Nov - 2024</p>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class=" text-base font-semibold text-primary-yellow dark:text-white">Inicio del evento</p>
+                    </li>
+                  </ul>
+                
+                </div>
+                
+                <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
+                  <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span >Learn More </span>
+                  <img class="w-6 h-6 rounded-full  " src="/src/icons/arrow-black.svg" alt="">
+
+                  </a>
+                </div>
+              </div>
+               <!--Card 2-->
+              <div class="max-w-sm  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                <div class="px-6 py-4 bg-green-primary ">
+                  <ul>
+                
+                    <li class="flex justify-center">
+                      <h1 class="text-[100px] font-extrabold text-white  dark:text-white">22</h1>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class="text-3xl mb-4 font-extrabold text-white dark:text-white"> Nov - 2024</p>
+                
+                    </li>
+                    <li class="flex justify-center">
+                      <p class=" text-base font-semibold text-primary-yellow dark:text-white"> Finalizacion del evento</p>
+                    </li>
+                  </ul>
+                
+                </div>
+                
+                <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
+                  <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span >Learn More </span>
+                  <img class="w-6 h-6 rounded-full  " src="/src/icons/arrow-black.svg" alt="">
+
+                  </a>
+                </div>
+              </div>
+               
+            </div>
+          
+          </div> 
+
+    </div>
+
+
+</section>
+<section class="relative text-primary-black" id="about" >
+  <div class=" container flex flex-col  md:grid  gap-x-5 grid-rows-1 grid-cols-1  max-w-screen-lg content-center  flex-wrap justify-center mt-48 mb-10 mx-auto ">
+      <div class="mx-4">
+        <div class="flex flex-col items-center">
+        <p class="text-5xl font-bold  text-primary-black dark:text-white">
+        Noticias
+        </p>
+        <img  class="w-[260px] h-[20px]" src="/src/icons/line-shape.svg" alt="">
+
+        </div>
+          <div class=" mt-6 flex flex-col p-4">
+
+            <div >
+              <h1 class="font-extrabold text-2xl mb-4"> Impulsando innovación y confianza  en la <br>
+                agricultura a nivel global</h1>
+                <p class="font-normal text-lg">
+                  Lorem ipsum dolor sit amet consectetur. Tempus vestibulum <br>
+                  convallis tellus massa varius orci amet risus
+                </p>
+                <div>
+                <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
+                
+                <h1>LEARN MORE</h1>
+                <img class="w-8 h-8" src="/src/icons/flecha.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-end my-12">
+          <div >
+            <h1 class="font-extrabold text-2xl mb-4"> Cultivando avances y seguridad en la <br>ingeniería agrícola a escala internacional</h1>
+              <p class="font-normal text-lg">
+                Lorem ipsum dolor sit amet consectetur. Tempus vestibulum <br>
+                convallis tellus massa varius orci amet risus
+              </p>
+              <div>
+              <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
+              
+              <h1>LEARN MORE</h1>
+              <img class="w-8 h-8" src="/src/icons/flecha.svg" alt="">
+            </div>
+          </div>
+        </div></div>
+
+        <div>
+          <h1 class="font-extrabold text-2xl mb-4"> Impulsando innovación y confianza  en la <br>
+            agricultura a nivel global</h1>
+            <p class="font-normal text-lg">
+              Lorem ipsum dolor sit amet consectetur. Tempus vestibulum <br>
+              convallis tellus massa varius orci amet risus
+            </p>
+            <div>
+            <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
+            
+            <h1>LEARN MORE</h1>
+            <img class="w-8 h-8" src="/src/icons/flecha.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+          </div>
+      </div>    
+      
+      </div>
+</section>
+
+<section class="relative text-primary-black" id="about" >
+  <div class=" container flex flex-col  md:grid  gap-x-5 grid-rows-1 grid-cols-1  max-w-screen-lg content-center  flex-wrap justify-center mt-48 mb-10 mx-auto ">
+    
+    <div class="flex flex-col items-center mb-8">
+      <p class="text-5xl font-bold  text-primary-black dark:text-white">
+      Testimonios
+      </p>
+      <img  class="w-[260px] h-[20px]" src="/src/icons/line-shape.svg" alt="">
+
+      </div>
+
+    <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+          <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
+              <p class="my-4">If you care for your time, I hands down would go with this."</p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center ">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+              <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                  <div>Bonnie Green</div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+              </div>
+          </figcaption>    
+      </figure>
+      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
+              <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center ">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture">
+              <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                  <div>Roberta Casas</div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+              </div>
+          </figcaption>    
+      </figure>
+      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
+          <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
+              <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center ">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+              <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                  <div>Jese Leos</div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+              </div>
+          </figcaption>    
+      </figure>
+      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
+              <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center ">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+              <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                  <div>Joseph McFall</div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
+              </div>
+          </figcaption>    
+      </figure>
+  </div>
+  
+  </div>
+</section>
+
+<footer class=" text-primary-black dark:bg-gray-900 ">
+  <div class="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="" class="flex items-center">
+                <img src="/src/icons/logoipsum-262.svg" class="me-3" alt="Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">.</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-md font-bold text-primary-black uppercase dark:text-white">Comision</h2>
+                <ul class=" flex flex-col gap-y-4 dark:text-gray-400 font-normal text-sm">
+                    <li >
+                        <a href="https://flowbite.com/" class="hover:underline">Contacto</a>
+                    </li>
+                    <li >
+                      <a href="https://tailwindcss.com/" class="hover:underline">Comité Organizador CLIA</a>
+                    </li>
+                    <li >
+                      <a href="https://tailwindcss.com/" class="hover:underline">Comité Cientifico CLIA</a>
+                  </li>
+                  <li >
+                    <a href="https://tailwindcss.com/" class="hover:underline">Comité Publicidad CLIA</a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/" class="hover:underline">Comité Logistica CLIA</a>
+              </li>
+                </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-md font-bold text-primary-black uppercase dark:text-white">Lider</h2>
+              <ul class="flex flex-col gap-y-4 dark:text-gray-400 font-normal text-sm">
+                    <li class="">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Secretaria</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Quelbis Román Quintero </a>
+                    </li>
+                    <li>
+                      <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Quelbis Román Quintero </a>
+                  </li>
+                  <li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Alexi Peralta</a>
+                </li>
+                <li>
+                  <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Jaime Trespalacio</a>
+              </li>
+                </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-md font-bold text-primary-black uppercase dark:text-white">Contacto</h2>
+              <ul class="flex flex-col gap-y-3 items-center dark:text-gray-400">
+                    <li >
+                        <img class="w-6 h-6" src="/src/icons/email.svg" alt="">
+                    </li>
+                    <li >
+                      <img class="w-6 h-6" src="/src/icons/email.svg" alt="">
+                  </li>
+                  <li >
+                    <img class="w-6 h-6" src="/src/icons/email.svg" alt="">
+                </li>
+                <li >
+                  <img class="w-6 h-6" src="/src/icons/email.svg" alt="">
+              </li>
+              <li >
+                <img class="w-6 h-6" src="/src/icons/email.svg" alt="">
+            </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm  sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Jred0n29</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          
+            
+            
+            <a href="#" class=" hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+                <span class="sr-only">GitHub account</span>
+            </a>
+            
+        </div>
+    </div>
+  </div>
+</footer>
+
+  </main>
+</body>
+
+</html>
