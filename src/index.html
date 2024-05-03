@@ -14,7 +14,7 @@
 
 
 <body class=" font-inter bg-gradient-to-br from- to-">
-  <nav class="bg-white border-b-[1px]  border-primary-black  ">
+  <nav class="bg-white border-b-[1px]  border-primary-black  relative z-40">
     <div class=" flex flex-col gap-y-4 md:max-w-screen-xl md:flex-row flex-wrap  items-center justify-between mx-auto p-4 ">
       <svg class="fill-black" id="logo-86" width="40" height="40" viewBox="0 0 40 40" 
         xmlns="http://www.w3.org/2000/svg">
@@ -64,18 +64,64 @@
             <a href="#about"
               class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent ">Programa</a>
           </li>
-          <li>
-            <a href="#contacto"
-              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent ">Politicas</a>
+          <li aria-current="page">
+            <div class="relative">
+              <button id="dropdownTemplate" data-dropdown-toggle="dropdown-template" class="inline-flex items-center text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700">
+                <img class="w-6 h-6 rounded-full me-2" src="icons/dowm.svg" alt="">
+                <h1 class="block py-2 font-bold px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent">Templates</h1>
+                <svg class="w-3 h-3" aria-hidden="true" fill="currentColor" viewBox="0 0 16 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              <div id="dropdown-template" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow mt-2 top-full right-0 md:left-auto md:right-0 md:top-auto md:bottom-0 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownTemplate">
+                  <li>
+                    <a href="documents/Template_CLIA2024_Abstract.docx" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Abstract</a>
+                  </li>
+                  <li>
+                    <a href="documents/Template_CLIA2024_Word_Paper.docx" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Template CLIA Word Paper</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <a href="#playground"
               class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent    ">Localización</a>
           </li>
-          <li>
-            <a href="#playground"
-              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent    ">Contactos</a>
+          <li aria-current="page">
+            <div class="relative">
+              <button id="dropdownDatabase" data-dropdown-toggle="dropdown-database" class="inline-flex items-center text-sm font-normal text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700">
+                <img class="w-6 h-6 rounded-full me-2" src="icons/dowm.svg" alt="">
+                <h1 class="block py-2 font-bold px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent">Politicas</h1>
+                <svg class="w-3 h-3" aria-hidden="true"  fill="currentColor" viewBox="0 0 16 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              <div id="dropdown-database" class="absolute -z-100 hidden bg-white divide-y divide-gray-100 rounded-lg shadow mt-2 top-full right-0 md:left-auto md:right-0 md:top-auto md:bottom-0 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                  <li>
+                    <a href="documents/Política de dcto CLIA 2024_Spanish (1).pdf" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Politica de dcto</a>
+                  </li>
+                  <li>
+                    <a href="documents/Política de dcto CLIA 2024_English.pdf" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Politica de dcto Ingles</a>
+                  </li>
+                  <li>
+                    <a href="documents/Política de Publicación_English.pdf" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Politica publicacion Ingles</a>
+                  </li>
+                  <li>
+                    <a href="documents/Política_Pulicación_Español.pdf" download class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Politica publicacion Español</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            
           </li>
+          
         </ul>
       </div>
     </div>
@@ -100,7 +146,7 @@
                    
                 </div>
                 <div class="flex justify-end  pr-0 md:pr-24">
-                  <img  class="w-[260px] h-[20px]" src="/icons/line-shape.svg" alt="">
+                  <img  class="w-[260px] h-[20px]" src="icons/line-shape.svg" alt="">
                     
                 </div>
                 
@@ -112,7 +158,7 @@
                   orci. Est elementum semper elit integer nunc egestas.</p>
 
                 <div class=" hidden md:block  text-primary-blue " >
-                  <img  class="w-8 h-8" src="/icons/happy.svg" alt="">
+                  <img  class="w-8 h-8" src="icons/happy.svg" alt="">
                   <div class="flex gap-x-2 items-center">
                     <h1 class="font-extrabold text-2xl">2K +</h1>
                     <h1>Ponentes</h1>
@@ -128,16 +174,16 @@
               <div class=" mt-8 bg-primary-black text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
                 
                 <h1>REGISTRARSE</h1>
-                <img class="w-8 h-8" src="/icons/flecha.svg" alt="">
+                <img class="w-8 h-8" src="icons/flecha.svg" alt="">
               </div>
             </div>
 
           <div class=" flex gap-x-10 mt-20 justify-center flex-wrap gap-y-8">
-            <img src="/icons/logoipsum-236.svg" alt="">
+            <img src="icons/logoipsum-236.svg" alt="">
 
-            <img src="/icons/logoipsum-262.svg" alt="">
-            <img src="/icons/logoipsum-235.svg" alt="">
-            <img src="/icons/logoipsum-238.svg" alt="">
+            <img src="icons/logoipsum-262.svg" alt="">
+            <img src="icons/logoipsum-235.svg" alt="">
+            <img src="icons/logoipsum-238.svg" alt="">
 
 
           </div>
@@ -152,7 +198,7 @@
             <p class="text-lg  md:text-3xl  font-extrabold  text-black-medium dark:text-white">
             Ejes Tematicos
             </p>
-            <img  class="w-[260px] h-[20px]" src="/icons/line-shape.svg" alt="">
+            <img  class="w-[260px] h-[20px]" src="icons/line-shape.svg" alt="">
 
         </div>
         
@@ -233,7 +279,7 @@
           <p class="text-2xl  md:text-3xl  font-extrabold  text-black-medium dark:text-white">
           Fechas Importantes
           </p>
-          <img  class="w-[260px] h-[20px]" src="/icons/line-shape.svg" alt="">
+          <img  class="w-[260px] h-[20px]" src="icons/line-shape.svg" alt="">
 
       </div>
           
@@ -262,7 +308,7 @@
                 <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
                   <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                   <span >Learn More </span>
-                  <img class="w-6 h-6 rounded-full  " src="/icons/arrow-black.svg" alt="">
+                  <img class="w-6 h-6 rounded-full  " src="icons/arrow-black.svg" alt="">
 
                   </a>
                 </div>
@@ -290,7 +336,7 @@
                 <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
                   <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                   <span >Learn More </span>
-                  <img class="w-6 h-6 rounded-full  " src="/icons/arrow-black.svg" alt="">
+                  <img class="w-6 h-6 rounded-full  " src="icons/arrow-black.svg" alt="">
 
                   </a>
                 </div>
@@ -318,7 +364,7 @@
                 <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
                   <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                   <span >Learn More </span>
-                  <img class="w-6 h-6 rounded-full  " src="/icons/arrow-black.svg" alt="">
+                  <img class="w-6 h-6 rounded-full  " src="icons/arrow-black.svg" alt="">
 
                   </a>
                 </div>
@@ -349,7 +395,7 @@
                 <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
                   <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                   <span >Learn More </span>
-                  <img class="w-6 h-6 rounded-full  " src="/icons/arrow-black.svg" alt="">
+                  <img class="w-6 h-6 rounded-full  " src="icons/arrow-black.svg" alt="">
 
                   </a>
                 </div>
@@ -377,7 +423,7 @@
                 <div class="px-6 pt-4 pb-2 items-center bg-green-primary">
                   <a href="" target="_blank" class="flex flex-row justify-center bg-white rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
                   <span >Learn More </span>
-                  <img class="w-6 h-6 rounded-full  " src="/icons/arrow-black.svg" alt="">
+                  <img class="w-6 h-6 rounded-full  " src="icons/arrow-black.svg" alt="">
 
                   </a>
                 </div>
@@ -398,7 +444,7 @@
         <p class="text-5xl font-bold  text-primary-black dark:text-white">
         Noticias
         </p>
-        <img  class="w-[260px] h-[20px]" src="/icons/line-shape.svg" alt="">
+        <img  class="w-[260px] h-[20px]" src="icons/line-shape.svg" alt="">
 
         </div>
           <div class=" mt-6 flex flex-col p-4">
@@ -414,7 +460,7 @@
                 <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
                 
                 <h1>LEARN MORE</h1>
-                <img class="w-8 h-8" src="/icons/flecha.svg" alt="">
+                <img class="w-8 h-8" src="icons/flecha.svg" alt="">
               </div>
             </div>
           </div>
@@ -430,7 +476,7 @@
               <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
               
               <h1>LEARN MORE</h1>
-              <img class="w-8 h-8" src="/icons/flecha.svg" alt="">
+              <img class="w-8 h-8" src="icons/flecha.svg" alt="">
             </div>
           </div>
         </div></div>
@@ -446,7 +492,7 @@
             <div class=" mt-8 bg-green-secondary text-white text-[16px] font-bold inline-flex items-center px-3 py-1 rounded-2xl drop-shadow-2xl">
             
             <h1>LEARN MORE</h1>
-            <img class="w-8 h-8" src="/icons/flecha.svg" alt="">
+            <img class="w-8 h-8" src="icons/flecha.svg" alt="">
           </div>
         </div>
       </div>
@@ -465,7 +511,7 @@
       <p class="text-5xl font-bold  text-primary-black dark:text-white">
       Testimonios
       </p>
-      <img  class="w-[260px] h-[20px]" src="/icons/line-shape.svg" alt="">
+      <img  class="w-[260px] h-[20px]" src="icons/line-shape.svg" alt="">
 
       </div>
 
@@ -532,7 +578,7 @@
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="" class="flex items-center">
-                <img src="/icons/logoipsum-262.svg" class="me-3" alt="Logo" />
+                <img src="icons/logoipsum-262.svg" class="me-3" alt="Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">.</span>
             </a>
         </div>
@@ -581,19 +627,19 @@
               <h2 class="mb-6 text-md font-bold text-primary-black uppercase dark:text-white">Contacto</h2>
               <ul class="flex flex-col gap-y-3 items-center dark:text-gray-400">
                     <li >
-                        <img class="w-6 h-6" src="/icons/email.svg" alt="">
+                        <img class="w-6 h-6" src="icons/email.svg" alt="">
                     </li>
                     <li >
-                      <img class="w-6 h-6" src="/icons/email.svg" alt="">
+                      <img class="w-6 h-6" src="icons/email.svg" alt="">
                   </li>
                   <li >
-                    <img class="w-6 h-6" src="/icons/email.svg" alt="">
+                    <img class="w-6 h-6" src="icons/email.svg" alt="">
                 </li>
                 <li >
-                  <img class="w-6 h-6" src="/icons/email.svg" alt="">
+                  <img class="w-6 h-6" src="icons/email.svg" alt="">
               </li>
               <li >
-                <img class="w-6 h-6" src="/icons/email.svg" alt="">
+                <img class="w-6 h-6" src="icons/email.svg" alt="">
             </li>
                     
                 </ul>
@@ -602,7 +648,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm  sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Jred0n29</a>. All Rights Reserved.
+        <span class="text-sm  sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">Unisucre</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
           
@@ -622,5 +668,37 @@
 
   </main>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const button = document.getElementById('dropdownDatabase');
+  const dropdown = document.getElementById('dropdown-database');
+
+  button.addEventListener('click', function() {
+    dropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById('dropdownTemplate');
+    const dropdown = document.getElementById('dropdown-template');
+
+    button.addEventListener('click', function() {
+      dropdown.classList.toggle('hidden');
+    });
+
+    // Cerrar el dropdown al hacer clic fuera de él
+    document.addEventListener('click', function(event) {
+      if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  });
+</script>
 
 </html>
