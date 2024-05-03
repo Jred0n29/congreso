@@ -699,6 +699,25 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById('theme-toggletwo');
+    const navbar = document.getElementById('navbar-language');
+
+    button.addEventListener('click', function() {
+      navbar.classList.toggle('hidden');
+      const expanded = navbar.getAttribute('aria-expanded') === 'true' || false;
+      navbar.setAttribute('aria-expanded', !expanded);
+    });
+
+    // Cerrar el menú al hacer clic fuera de él
+    document.addEventListener('click', function(event) {
+      if (!navbar.contains(event.target) && !button.contains(event.target)) {
+        navbar.classList.add('hidden');
+        navbar.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 </script>
 
 </html>
